@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+@media screen and (max-height:620px) {
+  body {
+    padding-top: 230px;
+  }
+}
+
+#header {
+  position: absolute;
+  top: 15px;
+  left: 24px;
+  width: 60vh;
+  height: 10vh;
+}
+
+#logo {
+  height: 55px;
+  width: 55px;
+  display: inline-block;
+}
+
+#logo img {
+  height: 100%;
+  width: 100%;
+}
+
+#title {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#title h1 {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 30px;
+  letter-spacing: 9px;
+}
+
+@media screen and (max-width:430px) {
+  #logo {
+    height: 40px;
+    width: 40px;
+    margin-left: -8px;
+  }
+  #title h1 {
+    margin-top: 5px;
+    margin-left: 16px;
+    font-size: 25px;
+    letter-spacing: 6px;
+  }
+  
+}
+
+@media screen and (max-width:769px) and (min-width:431px) {
+  #logo {
+    height: 50px;
+    width: 50px;
+    margin-left: -8px;
+  }
+  #title h1 {
+    margin-top: 7px;
+    margin-left: 18px;
+    font-size: 28px;
+  }
+  
+}
+
+/* home button */
+
+.home_button {
+  position: absolute;
+  top: 91px;
+  left: 24px;
+  height: 30px;
+  width: 75px;
+  color: white;
+  font-size: 18px;
+  border-radius: 25px;
+  border: 3px solid white;
+  font-weight: 500;
+  text-align: center;
+  background: rgb(232, 37, 107);
+  background: radial-gradient(circle, rgba(232, 37, 107, 1) 40%, rgba(141, 39, 102, 1) 100%);
+  cursor: pointer;
+  outline: none;
+}
+
+.home_button:hover {
+  box-shadow: 0 0 20px rgb(232, 37, 107);
+}
+
+#fin_button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  height: 35px;
+  width: 80px;
+  color: white;
+  font-size: 20px;
+  border-radius: 25px;
+  border: 3px solid white;
+  font-weight: 500;
+  text-align: center;
+  background: rgb(232, 37, 107);
+  background: radial-gradient(circle, rgba(232, 37, 107, 1) 40%, rgba(141, 39, 102, 1) 100%);
+  cursor: pointer;
+  outline: none;
+}
+
+#fin_button:hover {
+  box-shadow: 0 0 20px rgb(232, 37, 107);
+}
+
+@media screen and (max-width:430px) {
+  .home_button {
+    top: 68px;
+    height: 25px;
+    width: 64px;
+    font-size: 14px;
+  }
+  #fin_button {
+    height: 25px;
+    width: 64px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:768px) and (min-width:431px) {
+  .home_button, #fin_button {
+    height: 27px;
+    width: 68px;
+    font-size: 15px;
+  }
+}
+
+.movie-container {
+  margin: 20px 0;
+}
+
+.movie-container input {
+  background-color: #fff;
+  border: 0;
+  color: black;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.seat.occupied {
+  background-color: #fff;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+}
+
+.screen {
+  background-color: #fff;
+  height: 122px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: #6feaf6;
+}

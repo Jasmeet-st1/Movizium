@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Portal</title>
+    <link rel="stylesheet" href="Style sheets/payment.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <div id="otpbody">
+        <div id="otpbox">
+            <h1>Enter OTP</h1>
+            <h2>Enter One Time Password you have recieved on your registered Mobile phone</h2>
+            <form action="confirm.html">
+                <input type="tel" name="otp" id="otp" pattern="[0-9]{6}">
+                <button type="submit" id="otpbtn" class="PayButton">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="paymentgate">
+        <h1 id="payheading">Please Select Mode Of Payment</h1>
+
+        <div id="Paytmdiv" class="outerdiv">
+
+            <input type="radio" name="pay" id="Paytm" class="radiobtn" checked>
+            <label for="Paytm" class="labelhs">Paytm</label>
+            
+            <div id="Paytmbox" class="innerdiv">
+                <form action="confirm.html">
+                    <label for="Mobnum">Enter Mobile Number Linked to Your Paytm Account</label>
+                    <input type="tel" name="Mobnum" id="Mobnum" pattern="[0-9]{10}" required> 
+                    <button class="PayButton nonotp" type="submit">Proceed</button>   
+                </form>
+            </div>
+        </div>
+
+
+        <div id="Debitdiv" class="outerdiv">
+
+            <input type="radio" name="pay" id="Debit" class="radiobtn">
+            <label for="Debit" class="labelhs">Debit Card</label>
+            
+            <div id="Debitbox" class="dcbox innerdiv">
+                <form>
+
+                    <div class="cardn">
+                        <label for="cardnumber">Card Number</label>
+                        <input type="number" id="cardnumber" class="inputt" placeholder="Enter card number" min="1111111111111111" max="9999999999999999" required>
+                    </div>   
+                    <div class="cardexp">
+                        <label for="cardexpiry">Card Expiry Date</label>
+                        <input type="month" id="cardexpiry" class="inputt" value="2021-05" min="2021-05" required>
+                    </div>   
+                    <div class="cardCvv">
+                        <label for="cardcvv">CVV</label>
+                        <input type="number" id="cardcvv" class="inputt" placeholder="CVV" max="999" min="100" required>
+                    </div>   
+                    <div class="paybtn">
+                        <button class="forotp PayButton" type="submit">Pay Amount</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+        <div id="Creditdiv" class="outerdiv">
+
+            <input type="radio" name="pay" id="Credit" class="radiobtn">
+            <label for="Credit" class="labelhs">Credit Card</label>
+            
+            <div id="Creditbox" class="dcbox innerdiv">
+                <form>
+
+                    <div class="cardn">
+                        <label for="cardnumber1">Card Number</label>
+                        <input type="number" id="cardnumber1" class="inputt" placeholder="Enter card number" min="1111111111111111" max="9999999999999999" required>
+                    </div>   
+                    <div class="cardexp">
+                        <label for="cardexpiry1">Card Expiry Date</label>
+                        <input type="month" id="cardexpiry1" class="inputt" value="2021-05" min="2021-05" required>
+                    </div>   
+                    <div class="cardCvv">
+                        <label for="cardcvv1">CVV</label>
+                        <input type="number" id="cardcvv1" class="inputt" placeholder="CVV" max="999" min="100" required>
+                    </div>   
+                    <div class="paybtn">
+                        <button class="forotp PayButton" type="submit">Pay Amount</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="PATdiv" class="outerdiv">
+
+            <input type="radio" name="pay" id="PAT" class="radiobtn">
+            <label for="PAT" class="labelhs">Pay At Theatre</label>
+            
+            <div class="paybtn innerdiv" id="Patdiv">
+                <button class="PayButton nonotp">Proceed</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var otpdiv=document.querySelector('#otpbody');
+
+        var paytmbtn=document.querySelector("#PATdiv button");
+
+        var forms=document.querySelectorAll('#Debitbox form,#Creditbox form');
+
+        for (let index = 0; index < forms.length; index++) {            
+            forms[index].addEventListener('submit',function(e){
+                e.preventDefault();
+                otpdiv.style.display='block';
+            })
+        }
+        
+        paytmbtn.addEventListener('click',function(){
+            location.href='confirm.html';
+        })
+
+    </script>
+</body>
+</html>

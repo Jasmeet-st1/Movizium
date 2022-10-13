@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movizium | Select Theater</title>
+    <link rel="stylesheet" href="Style sheets/style1.css">
+    <link rel="stylesheet" href="Style sheets/d1.css">
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    <div id="header">
+        <div id="header2">
+            <div id="logo">
+                <img src="Images/logo.png" alt="logo">
+
+            </div>
+            <div id="title">
+                <h1>MOVIZIUM</h1>
+
+            </div>
+            <div id="loginb">
+                <button id="loginbtn">Login</button>
+            </div>
+            <div id="usernamediv">
+                <img src="Images/login.png" alt="">
+                <h2></h2>
+            </div>
+            <div id="logoutb">
+                <button id="logoutbtn">Logout</button>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="home_button">HOME</button>    
+
+    <div id="loginDes">
+        <div class="container">
+            <div class="text">Login</div>
+            <form action="#" onsubmit="submitForm()">
+                <div class="data">
+                    <label>Username</label>
+                    <input type="text" id="usernm" required>
+                    <p class="error"></p>
+                </div>
+                <div class="data">
+                    <label>Password</label>
+                    <input type="password" id="passwd" required>
+                    <p class="error"></p>
+                </div>
+                <div class="forgot-pass"><a href="#">Forgot Password?</a></div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button type="submit" id="loginbtn3">login</button>
+                </div>
+                <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+            </form>
+        </div>
+    </div>
+
+    <h2 id="resultM">Selected movie is available in theatres below</h2>
+
+    <div id="theaterlist">
+
+        <div class="theater">
+            <div class="fImage">
+                <img src="Images/jindeMeriye.jpg" alt="">
+            </div>
+            <div class="theatInfo">
+                <h2 class="theaterN">Prime Cinema</h2>
+                <div class="ratings1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="pricen">Price </span>
+                    <span class="pricer">₹150</span>
+                </div>
+                <div class="timeSlot">
+                    <div class="times">10:00 AM</div>
+                    <div class="times">1:00 PM</div>
+                    <div class="times notAvl">2:00 PM</div>
+                    <div class="times">4:00 PM</div>
+                    <div class="times">7:00 PM</div>
+                </div>
+                <button class="bookTime">Book</button>
+            </div>
+        </div>
+
+        <div class="theater">
+            <div class="fImage">
+                <img src="Images/jindeMeriye.jpg" alt="">
+            </div>
+            <div class="theatInfo">
+                <h2 class="theaterN">P.V.R.</h2>
+                <div class="ratings1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="pricen">Price </span>
+                    <span class="pricer">₹140</span>
+                </div>
+                <div class="timeSlot">
+                    <div class="times">10:00 AM</div>
+                    <div class="times notAvl">1:00 PM</div>
+                    <div class="times">2:00 PM</div>
+                    <div class="times">4:00 PM</div>
+                    <div class="times notAvl">7:00 PM</div>
+                </div>
+                <button class="bookTime">Book</button>
+            </div>
+        </div>
+
+        <div class="theater">
+            <div class="fImage">
+                <img src="Images/jindeMeriye.jpg" alt="">
+            </div>
+            <div class="theatInfo">
+                <h2 class="theaterN">IMax</h2>
+                <div class="ratings1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="pricen">Price </span>
+                    <span class="pricer">₹190</span>
+                </div>
+                <div class="timeSlot">
+                    <div class="times">10:00 AM</div>
+                    <div class="times">1:00 PM</div>
+                    <div class="times">2:00 PM</div>
+                    <div class="times notAvl">4:00 PM</div>
+                    <div class="times notAvl">7:00 PM</div>
+                </div>
+                <button class="bookTime">Book</button>
+            </div>
+        </div>
+
+        <div class="theater">
+            <div class="fImage">
+                <img src="Images/jindeMeriye.jpg" alt="">
+            </div>
+            <div class="theatInfo">
+                <h2 class="theaterN">Elante</h2>
+                <div class="ratings1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="pricen">Price </span>
+                    <span class="pricer">₹165</span>
+                </div>
+                <div class="timeSlot">
+                    <div class="times">10:00 AM</div>
+                    <div class="times notAvl">1:00 PM</div>
+                    <div class="times">2:00 PM</div>
+                    <div class="times notAvl">4:00 PM</div>
+                    <div class="times">7:00 PM</div>
+                </div>
+                <button class="bookTime">Book</button>
+            </div>
+        </div>
+
+        <div class="theater">
+            <div class="fImage">
+                <img src="Images/jindeMeriye.jpg" alt="">
+            </div>
+            <div class="theatInfo">
+                <h2 class="theaterN">Tagore Theatre</h2>
+                <div class="ratings1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="pricen">Price </span>
+                    <span class="pricer">₹125</span>
+                </div>
+                <div class="timeSlot">
+                    <div class="times">10:00 AM</div>
+                    <div class="times">1:00 PM</div>
+                    <div class="times">2:00 PM</div>
+                    <div class="times">4:00 PM</div>
+                    <div class="times notAvl">7:00 PM</div>
+                </div>
+                <button class="bookTime">Book</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <div id="footabt">
+            <h2>About</h2>
+            <p>Movizium is a one stop destination to cater the ticket sales of all the movie shows currently running in your nearest multiplexes and all over the country, it showcases numerous movie options to choose from and movies from different languages and different genres ,along with their average rating to help you choose the one for you. In these modern times you can reside to this hassle-less method of booking movie tickets online in order to save your precious time wasted standing in long que’s.
+                (This website prototype has been designed by: Team-1(Jasmeet Singh, Jayant Kumar, Karan Dhiman, Naman Sharma))</p>
+        </div>
+        <div id="footcont">
+            <h2>Contact Us</h2>
+            <ul>
+                <li>
+                    <i class="far fa-envelope-square"></i>
+                    <span>Gmail</span>
+                </li>
+                <li>
+                    <i class="fab fa-facebook-square"></i>
+                    <span>Facebook</span>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </li>
+                <li>
+                    <i class="fab fa-twitter-square"></i>
+                    <span>Twitter</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="Scripts/c.js"></script>
+</body>
+</html>i

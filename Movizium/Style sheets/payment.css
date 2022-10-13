@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#paymentgate{
+    width: 50%;
+    min-height: 100vh;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 30px 10px;
+}
+
+#paymentgate h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.radiobtn{
+    height: 17px;
+    width: 17px;
+}
+
+.labelhs{
+    font-size: 26px;
+}
+
+.outerdiv{
+    margin: 30px auto;
+    width: 80%;
+}
+
+.innerdiv{
+    margin: 12px auto;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 9px;
+}
+
+.innerdiv form{
+    width: 100%;
+}
+
+label[for=Mobnum]{
+    display: block;
+    font-size: 18px;
+    text-align: center;
+}
+
+#Mobnum{
+    /* width: 72%; */
+    width: 60%; 
+    height: 34px;
+    padding: 2px 6px;
+    font-size: 17px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    outline:none;
+}
+
+input{
+    border-radius: 6px;
+}
+
+.PayButton{
+    display: block;
+    margin: 15px auto;
+    /* width: 60%; */
+    width: 26%;
+    border-radius: 9px;
+    height: 38px;
+    background-color: rgb(55, 125, 255);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border:2px solid white;
+    
+}
+
+.nonotp{
+    /* width: 40%; */
+    width: 19%;
+    border-radius: 8px;
+    border:2px solid white;
+
+}
+
+#Creditbox,#Debitbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cardn{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.cardexp{
+    width: 45%;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.cardCvv{
+    width: 35%;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.innerdiv label{
+    font-size: 20px;
+}
+
+.inputt{
+    display: block;
+    width: 100%;
+    height: 37px;
+    padding: 0 15px;
+    font-size: 15px;
+    outline:none;
+}
+
+#Paytmbox{
+    display: none;
+}
+
+#Debitbox{
+    display: none;
+}
+
+#Creditbox{
+    display: none;
+}
+
+#Patdiv{
+    display: none;
+}
+
+
+#Paytm:checked ~ #Paytmbox{
+    display: block;
+}
+
+#Debit:checked ~ #Debitbox{
+    display: block;
+}
+
+#Credit:checked ~ #Creditbox{
+    display: block;
+}
+
+#PAT:checked ~ #Patdiv{
+    display: block;
+}
+
+
+#otpbody{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+#otpbox{
+    width: 50%;
+    height: 400px;
+    margin: 7% auto;
+    background-color: rgb(209, 209, 209);
+    border-top: 17px solid #41bbbb;
+    border-bottom: 17px solid #41bbbb;
+    padding: 20px;
+}
+
+#otpbox h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+#otpbox h2{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+#otp{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 37px;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+#otpbtn{
+    width: 35%;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:430px){
+    #paymentgate{
+        width: 100%;
+        padding: 30px 0px;
+    }
+
+    .outerdiv{
+        width: 90%;
+    }
+
+    #otpbox{
+        width: 98%;
+        margin: 12% auto;
+    }
+
+    
+    .PayButton{
+        width: 38%;
+        border-radius: 6px;
+    }
+    .nonotp{
+        width: 27%;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (max-width:769px) and (min-width:431px){
+    #paymentgate{
+        width: 80%;
+        padding: 30px 0px;
+    }
+    #otpbox{
+        width: 80%;
+        margin: 9% auto;
+    }
+    #Mobnum{
+        width: 57%;
+    }
+    .PayButton{
+        width: 28%;
+        border-radius: 7px;
+    }
+    .nonotp{
+        width: 20%;
+        border-radius: 7px;
+    }
+}

@@ -1,0 +1,1184 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    /* background-color: #FFFFFF; */
+    background-color: #e8e6e5f0;
+    
+} 
+
+/* Scroll bar */
+
+/*body::-webkit-scrollbar {
+    display: none;
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+@media screen and (max-width:430px) {
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+    ::-webkit-scrollbar-track {
+        background: rgba(246, 152, 38, 1); 
+    }
+}
+
+/* header section */
+
+#header{
+    width: 100%;
+    height: 10vh;
+    min-height: 72px;
+    padding-top: 0.1px;
+    background-color:#008a8a;
+    color: whitesmoke;
+    
+}
+
+#header2{
+    display: flex;
+    width: 92%;
+    margin: auto;
+    height: 100%;
+}
+
+#logo img{
+    height: 58px;
+    width: 63px;
+    margin: 7px 2px 0px 8px;
+}
+
+#title h1,#usernamediv h2{
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0 0 20px; 
+    display: inline-block;
+    letter-spacing:7px;
+    margin-right: 10px;
+}
+
+#loginb{
+    margin-right: -20px;
+    z-index: 12;
+    margin-left: auto;
+}
+
+#loginbtn,#logoutbtn{
+    width: 80px;
+    padding: 6px;
+    font-size: 1.1rem;
+    margin-top: 16px;
+    background: rgb(18,135,165);
+    background: radial-gradient(circle, rgba(18,135,165,1) 3%, rgba(9,9,82,1) 100%);
+    border: 3px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold; 
+    box-shadow: 0 0 5px black;
+}
+
+#loginbtn:hover{
+    box-shadow: 0 0 9px #1e3c72;
+}
+
+#usernamediv{
+    display: none;
+    margin-left: auto;
+}
+
+#usernamediv h2{
+    letter-spacing: 0px;
+    margin-top: 2px;
+    margin-left: 2px;
+    vertical-align: 16px;
+}
+
+#usernamediv img{
+    margin-top: 10px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+#logoutb{
+    display: none;
+}
+
+@media screen and (max-width:430px){
+    #header2{
+        width: 88%;
+    }
+    
+    #logo img{
+
+        height: 46px;
+        width: 49px;
+        margin: 9px 11px 0px -15px;
+    }
+    #title h1,#usernamediv h2{
+
+        margin: 21px 0;
+        font-size: 23px;
+        margin-left:0px;
+        letter-spacing:4px;
+    }
+    #loginbtn{
+        
+        font-size: 15px;
+        margin-top: 15px;
+        margin-right: 8px;
+        width: 65px;
+        font-size: 14px ;
+    }
+    #logoutbtn{
+        font-size: 14px;
+        margin-top: 15px;
+        margin-right: -6px;
+        width: 65px;
+        font-size: 14px;
+    }
+    #usernamediv h2{
+        display:none
+    }
+    #usernamediv img{
+        height: 35px;
+        width: 35px;
+        margin-top: 14px;
+        margin-right: 11px;
+        border: 2px solid white;
+    }
+}    
+@media screen and (max-width:768px) and (min-width:430px){
+    #logo img{
+        height: 50px;
+        width: 54px;
+        margin: 7px 2px 0px -22px;
+    }
+    #title h1,#usernamediv h2{
+
+        margin: 20px 0;
+        font-size: 26px;
+        margin-left:12px;
+        letter-spacing:6px;
+    }
+    #loginbtn,#logoutbtn{
+        
+        font-size: 18px;
+        margin-top: 14px;
+        margin-right:0px;
+    }
+    #usernamediv h2{
+        letter-spacing: 0;
+        margin-left: 0;
+        display: none;
+    }
+    #usernamediv img{
+        height: 40px;
+        width: 40px;
+        margin-top: 12px;
+        margin-right: 17px;
+        vertical-align: 0;
+        border: 2px solid white;
+    }
+}
+
+
+/* Search for city section */
+
+#movies1{
+    padding:40px;
+
+}
+
+.div1{
+    background-image: url('https://image.freepik.com/free-vector/social-distancing-movie-theaters_52683-39665.jpg');
+    height:410px;
+    width:70%;
+    border-radius:20px;
+    margin:auto;
+    display:block;
+    box-shadow: 0 0 7px cyan;
+}
+
+.wrap{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+}
+    
+#textCity{
+    height: 25vh;
+}
+    
+#textCity h3{
+    margin-top: 2vh;
+	font-size:23px;
+}
+
+#inputcit{
+    height:29px;
+    padding:2px;
+    width:50%;
+    min-width: 250px;
+    border-radius:20px 0 0 20px;
+    text-align:center;
+    font-size:16px;
+    box-shadow: 0 0 20px 0 cyan;
+    border:3px solid cyan;
+    background-color:rgb(253, 253, 253); 
+    outline: 0;
+    color: black;
+    
+    
+}
+#searchbtn{
+    display:inline-block;
+    height:39px;
+    width:8%;
+    min-width: 70px;
+    font-size:16px;
+    padding:2px;
+    border-radius:0 20px 20px 0;
+    text-align: center;
+    font-weight: bold;
+    border:2px solid cyan;
+    color:aliceblue;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);         
+    outline: 0;
+    cursor: pointer;
+    margin-left: -8px;
+    margin-top: -14px;
+} 
+
+.shadow:hover {
+    box-shadow: 0 0 20px cyan;
+}
+
+@media screen and (max-width:430px){
+    #movies1{
+        width: 95%;
+        padding: 40px 8px;
+    }
+    .div1{
+        height: 270px;
+        width: 90%;
+        margin-left: 24px;
+    }
+    #textCity{
+        height: 20vh;
+    }
+     #textCity h3{
+        margin-top: 1.5vh;
+        font-size: 0.93rem;
+    } 
+    #inputcit{
+        height:20px;
+    }
+    #searchbtn{
+        height:30px;
+    }
+    #inputcit{
+        width:250px;
+    }
+}
+
+@media screen and (max-width:380px){
+    #inputcit{
+        width:190px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:431px){
+    #movies1{
+        width: 97%;
+        padding: 40px 8px;
+    }
+    .div1{
+        width: 85%;
+        
+    }
+    #textCity{
+        height: 30vh;
+    }
+    #textCity h3{
+        margin-top: 3vh;
+        font-size: 0.93rem;
+    }
+}
+
+
+/* suggestion section */
+
+.suggestion{
+    max-height: 180px;
+    width: 48.6%;
+    min-width: 250px;
+    margin-left: 21.3%;
+    overflow-y: auto;
+}
+
+.suggestion::-webkit-scrollbar {
+    display: none;
+}
+
+.wrap.active .suggestion{
+    padding: 0 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.suggestion li{
+    list-style: none;
+    text-align: left;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.active .suggestion li{
+    display: block;
+}
+.active .suggestion li:hover{
+    background-color: rgb(225, 255, 255);
+}
+
+@media screen and (max-width:370px){
+    .suggestion{
+        margin-left: 4%;
+    }
+}
+
+@media screen and (max-width:430px) and (min-width:370px){
+    .suggestion{
+        margin-left: 6.2%;
+        min-width: 239px;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:431px){
+    .suggestion{
+        margin-left: 19%;
+    }
+}
+
+
+
+/* modal box for description */
+
+#modalDes{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 100;
+    background-color: rgba(4, 5, 5, 0.85);
+}
+
+#modalBox{
+    width: 47%;
+    height: 323px;
+    background-color: white;
+    display: flex;
+    margin: 7% auto;
+    padding: 1%;
+    border-top: 25px solid cyan;
+    border-bottom: 25px solid cyan;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px white;
+}
+
+
+#imagef{
+    width: 30%;
+    height: 320px;
+}
+
+#imagef img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#descrip{
+    margin-left: 3px;
+    width: 60%;
+    
+}
+
+#descrip #fname,#descrip p{
+    margin-top: 10px;
+}
+
+#cut{
+    font-size: 1.8rem;
+    float: right;
+    cursor: pointer;
+}
+
+#cut abbr{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(31, 21, 83);
+}
+
+#cut abbr:hover{
+    color: red;
+}
+
+#info{
+    overflow: scroll;
+    height: 55%;
+}
+
+#info::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width:430px) {
+    #modalBox{
+        width: 89%;
+        height: 266px;
+        margin: 10vh auto;
+        border-top: 17px solid cyan;
+        border-bottom: 17px solid cyan;
+        font-size: 0.8rem;
+    }
+    #imagef{
+        width: 34%;
+        height: 216px;
+        margin-top: 21px;
+    }
+    #cut{
+        font-size: 1.3rem;
+        float: right;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:431px){
+    #modalBox{
+        width: 75%;
+        height: 290px;
+        border-top: 17px solid cyan;
+        border-bottom: 17px solid cyan;
+    }
+    #imagef{
+        width: 30%;
+        height: 285px;
+    }
+}
+
+.error{
+    color: red;
+}
+
+
+/* Trending movies portion */
+
+#moviePart,#resMovies{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.movies{
+    width: 260px;
+    height: 400px;
+    margin: 10px 6px;
+    border-radius: 8px;
+    transition: all 0.2s linear 0s;
+    cursor: pointer;
+}
+
+.movies:hover{
+    box-shadow: 0px 0px 15px 0px rgb(232,37,107);
+    transform: translateY(-3px) ;
+    background: rgb(232,37,107);
+    background: radial-gradient(circle, rgba(232,37,107,1) 40%, rgba(141,39,102,1) 100%);
+    color: white;
+
+}
+
+.filmImages img{
+    width: 94%;
+    height: 300px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 6px 7px;
+}
+
+.filmName {
+    margin: 4px auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: cursive;
+}
+
+.nam{
+    margin: 4px 0px;
+    cursor: pointer;
+}
+
+.lnagu{
+    margin: 0px;
+    font-size: 1rem;
+}
+
+#trendm,#resultM{
+    width: 88%;
+    font-size: 1.5em;
+    text-align: start;
+    margin:15px 100px;
+}
+
+@media screen and (max-width:768px) and (min-width:431px){
+    #moviePart{
+        width: 95%;
+    }
+    #resultM,#trendm{
+        margin:15px 31px;
+    }
+    .movies{
+        width: 225px;
+        height: 370px;
+        margin: 10px 0;
+        box-shadow: 0 0 5px black;
+    }
+    .filmImages{
+        margin: 1px auto;
+    }
+    .filmImages img{
+        width: 94%;
+        height: 285px;
+        /* margin: 3px 4px; */
+    }
+}
+
+@media screen and (max-width:430px){
+    #moviePart{
+        width: 97%;
+    }
+    .movies{
+        width: 180px;
+        height: 330px;
+        margin: 10px 5px;
+        box-shadow: 0 0 5px black;
+    }
+    .filmImages img{
+        width: 96%;
+        height: 240px;
+        margin: 3px 4px;
+    }
+    .nam{
+        font-size: medium;
+    }
+    .lnagu{
+        font-size: 14px;
+    }
+    #trendm,#resultM{
+        width: 88%;
+        font-size: 1.5em;
+        text-align: center;
+        margin:15px 26px;
+    }
+}
+
+/* home button */
+
+.home_button {
+    height: 34px;
+    width: 83px;
+    color: white;
+    font-size: 19px;
+    border-radius: 25px;
+    border: 3px solid white;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 18px;
+    margin-top: 13px;
+    background: rgb(232, 37, 107);
+    background: radial-gradient(circle, rgba(232, 37, 107, 1) 40%, rgba(141, 39, 102, 1) 100%);
+    box-shadow: 0 0 5px black;
+}
+
+.home_button:hover {
+    box-shadow: 0 0 20px rgb(232, 37, 107);
+}
+
+@media screen and (max-width:430px){
+    .home_button{
+        height: 25px;
+        width: 64px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:431px){
+    .home_button{
+        height: 28px;
+        width: 69px;
+        font-size: 17px;
+    }
+}
+
+/* resulting movies */
+
+#reslMovie{
+    width: 90%;
+    margin: auto;
+    
+}
+
+.bMovie{
+    background: rgb(236, 208, 162);
+    background: radial-gradient(circle, rgba(236, 208, 162, 1) 0%, rgba(246, 152, 38, 1) 100%);
+    width: 100%;
+    display: flex;
+    margin: 40px 0;
+    box-shadow: 0 0 20px rgb(236, 236, 236);
+    box-sizing: border-box;
+    padding: 22px 38px;
+    box-shadow: 0 0 15px black;
+    border-radius: 14px;
+}
+
+.mImage{
+    width: 21%;
+    height: 325px;
+    border-radius: 10px;
+    margin: 3px 0 0 -9px;
+    margin-top:11px ;
+}
+
+.mImage img{
+    width: 100%;
+    height: 100%;
+    border-radius:6px;
+    box-shadow: 0 0 5px 0 black;
+}
+
+.Ratingn{
+    margin-bottom: 5px;
+}
+
+.ratings{
+    margin-bottom: 20px;
+}
+
+.mDescrip{
+    width: 65%;
+    margin-left: 27px;
+    padding: 7px;
+    font-size: 1.05rem;
+}
+
+.FName{
+    margin-top:0;
+}
+
+.fDescriptionN{
+    margin-bottom: 2px;
+}
+
+.fDescription{
+    margin-top: 2px;
+    
+}
+
+.lnaguag{
+    color: white;
+    background-color: #808088;
+    border-radius: 15px;
+    border: 3px solid white;
+    text-align: center;
+    display: inline-block;
+    padding: 1px 5px;
+    box-sizing: border-box;
+}
+
+.boktkt{
+    height: 35px;
+    background: rgb(232, 37, 107);
+    background: radial-gradient(circle, rgba(232, 37, 107, 1) 40%, rgba(141, 39, 102, 1) 100%);
+    border-radius: 20px;
+    width: 126px;
+    outline: none;
+    border: 3px solid white;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.boktkt:hover{
+    box-shadow: 0 0 15px rgb(233, 29, 114);
+}
+
+
+@media screen and (max-width:430px) {
+    #resultM{
+        font-size: 17.5px;
+        margin-left: 30px;
+    }
+    #reslMovie{
+        width: 97%;
+    }
+    .bMovie{
+        width: 100%;
+        margin: 20px 0;
+        box-sizing: border-box;
+        padding: 8px;
+        border-radius:9px;
+         box-shadow:0 0 9px black ;
+    }
+    .mImage{
+        width: 36%;
+        height: 194px;   
+        margin-left: 6px;
+        vertical-align: center;
+        margin-top: 6px;
+    }
+    .mDescrip{
+        width: 65%;
+        margin-left: 9px;
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+    .FName{
+        margin:0px;
+    }
+    .Ratingn{
+        margin-bottom: 0;
+    }
+    .ratings{
+        margin-bottom: 8px;
+    }
+    .durat{
+        margin: 8px 0;
+    }
+    .fDescriptionN{
+        margin-bottom: 0;
+        margin-top: 8px;
+    }
+    .fDescription{
+        max-height: 90px;
+        overflow-y: scroll;
+        margin-top: 3px;
+    }
+    .boktkt{
+        height: 30px;
+        font-size: 0.92rem;
+        width: fit-content;
+    }
+    
+}
+
+@media screen and (min-width:386px) {
+    .lnaguag{
+        display: block;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width:769px) and (min-width:430px){
+    #reslMovie{
+        width: 94%;   
+    }
+    .bMovie{
+        margin: 40px 0;
+        padding: 22px 38px;
+    }
+    .mImage{
+        width: 40%;
+        height: 316px;
+        margin: 11px 0 0 -7px;
+    }
+}
+
+
+/* theater section */
+
+#theaterlist{
+    width: 85%;
+    margin: auto;
+}
+
+.theater{
+    background: rgb(236, 208, 162);
+    background: radial-gradient(circle, rgba(236, 208, 162, 1) 0%, rgba(246, 152, 38, 1) 100%);
+    display: flex;
+    width: 92%;
+    height: 300px;
+    margin: 37px 0 0 23px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    padding: 12px;
+    border-radius:10px;
+}
+
+.fImage{
+    width: 21%;
+}
+
+.fImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 black;
+}
+
+.theatInfo{
+    width: 70%;
+    margin-left: 29px;
+}
+
+.theaterN{
+    margin: 7px 0 12px 0;
+}
+
+.ratings1{
+    margin-bottom: 12px;
+}
+
+.price{
+    margin-bottom: 44px;
+}
+
+.timeSlot{
+    display: flex;
+    justify-content: space-between;
+    outline: none;
+}
+
+.times{
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 6px;
+    background-color: rgb(255, 255, 255);
+    border: 1.8px solid #e8e0e0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.notAvl{
+    background-color: rgb(253, 215, 215);
+    cursor: context-menu;
+    border-color: red;
+}
+
+.selected{
+    border-color: green;
+    background-color: rgb(223, 252, 224);
+    border-width: 1.8px;
+}
+
+.bookTime{
+    margin-top: 35px;
+    height: 38px;
+    background: rgb(232, 37, 107);
+    background: radial-gradient(circle, rgba(232, 37, 107, 1) 40%, rgba(141, 39, 102, 1) 100%);
+    border-radius: 20px;
+    width: 88px;
+    outline: none;
+    border: 3px solid white;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.bookTime:hover{
+    box-shadow: 0 0 15px rgb(233, 29, 114);
+}
+
+@media screen and (max-width:430px) {
+    #theaterlist{
+        width: 99%;
+        margin: auto;
+    }
+    .theater{
+        display: flex;
+        width: 95%;
+        height: fit-content;
+        padding: 8px;
+        font-size: x-small;
+        margin-left: 11px;
+        border-radius: 8px;
+        box-shadow:0 0 5px black;
+    }
+    .fImage{
+        width: 34%;
+        height: 136px;
+    }
+    .theatInfo{
+        width: 80%;
+        margin-left: 11px;
+    }
+    .theaterN{
+        margin: 4px 0 10px 0;
+    }
+    .price{
+        margin-bottom: 11px;
+    }
+    .times{
+        padding: 3px;
+        border-width: 2px; 
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 9px;
+    }
+    .bookTime{
+        margin-top: 10px;
+        height: 22px; 
+        width: 56px;
+        outline: none;
+        border: 2px solid rgb(255, 232, 232);
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:769px) and (min-width:431px) {
+    #theaterlist{
+        width: 94%;
+    }
+    .theater{
+        width: 100%;
+        height: 226px;
+        padding: 10px;
+        font-size: 13px;
+        border-radius: 10px;
+        margin-left: 0;
+        box-shadow: 0 0 7px black;
+    }
+    .fImage{
+        width: 27%;
+    }
+    .price{
+        margin-bottom: 20px;
+    }
+    .timeSlot{
+        margin: 23px 0;
+    }
+    .bookTime{
+        margin-top: 8px;
+        height: 30px; 
+        width: 64px;
+        font-size: 17px;
+    }
+}
+
+/* footer section */
+
+#footer{
+    width: 100%;
+    height: 276px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 21px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#footabt,#footcont{
+    width: 35%;
+    height: 170px;
+}
+
+#footabt h2,#footcont h2{
+    cursor: context-menu;
+}
+
+#footcont ul{
+    list-style-type: none;
+    padding-left: 2px;
+}
+
+#footcont li{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    font-size: 22px;
+    margin: -2px 0;
+    padding: 5px 2px;
+    cursor: context-menu;
+}
+
+#footcont li i,#footcont li span{
+    cursor: pointer;
+}
+
+
+.fa-instagram:hover{
+    border-radius: 5px;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+.fa-facebook-square:hover{
+    border-radius: 5px;
+    background-color: #3b5998;
+}
+.fa-twitter-square:hover{
+    border-radius: 5px;
+    background-color: #3b5998;
+}
+
+@media screen and (max-width:769px) and (min-width:430px){
+    #footer{
+        height: 255px;
+        padding-top: 15px;
+        padding-bottom: 45px;
+    }
+    #footabt{
+        width: 60%;
+    }
+
+    #footcont{
+        width: 35%;
+    }
+}
+
+
+@media screen and (max-width:430px){
+    #footer{
+        margin-top: 20px;
+        height: 240px;
+        padding-top: 5px;   
+    }
+    #footabt,#footcont{
+        width: 45%;
+    }
+    #footabt h2,#footcont h2{
+        font-size: 20px;
+    }
+    #footabt p,#footcont span{
+        font-size: 10px;
+    }
+    
+
+}
+
+/* last page modal box */
+
+#bodybox{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 100;
+    background-color: rgba(4, 5, 5, 0.85);
+}
+
+#Modaldiv{
+    width: 43%;
+    height: 387px;
+    background-color: white;
+    margin: 7% auto;
+    padding: 1%;
+    border-radius: 10px;
+    border: 7px solid #5df1f1;
+}
+
+#tick i{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    color: #41bbbb;
+    margin-top:10px;
+}
+
+#Modaldiv h1,#Modaldiv h2{
+    text-align: center;
+}
+
+#fin_home_button{
+    padding: 7px 15px 7px 15px;
+    color: white;
+    font-size: 19px;
+    display: block;
+    border-radius: 25px;
+    border: 3px solid rgb(209 165 165);
+    font-weight: 500;
+    text-align: center;
+    /* margin-left: 198px; */
+    margin: 37px auto 0;
+    /* margin-top: 37px; */
+    background: rgb(232, 37, 107);
+    background: radial-gradient(circle, rgba(232, 37, 107, 1) 40%, rgba(141, 39, 102, 1) 100%);
+    cursor: pointer;
+}
+
+#fin_home_button:hover {
+    box-shadow: 0 0 20px rgb(232, 37, 107);
+}
+
+@media screen and (max-width:430px){
+    #Modaldiv{
+        width: 83%;
+        height: 56%;
+        margin-top: 70px;
+    }
+    #fin_home_button{
+        /* margin: 31px 0 0 77px; */
+        margin: 31px 0 0 83px;
+    }
+    #Modaldiv h1{
+        font-size: 26px;
+        letter-spacing:-1px;
+    }
+    #Modaldiv h2{
+        font-size: 22px;
+    }
+    #fin_home_button{
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width:431px) and (max-width:769px){
+    #Modaldiv{
+        width: 72%;
+        margin-top: 70px;
+    }
+    #fin_home_button{
+        margin-left: 176px;
+    }
+}

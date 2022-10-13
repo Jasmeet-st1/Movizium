@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movizium | Select Movie</title>
+    <link rel="stylesheet" href="Style sheets/style1.css">
+    <link rel="stylesheet" href="Style sheets/d1.css">
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="header">
+        <div id="header2">
+            <div id="logo">
+                <img src="Images/logo.png" alt="logo">
+
+            </div>
+            <div id="title">
+                <h1>MOVIZIUM</h1>
+
+            </div>
+            <div id="loginb">
+                <button id="loginbtn">Login</button>
+            </div>
+            <div id="usernamediv">
+                <img src="Images/login.png" alt="">
+                <h2></h2>
+            </div>
+            <div id="logoutb">
+                <button id="logoutbtn">Logout</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="loginDes">
+        <div class="container">
+            <div class="text">Login</div>
+            <form action="#" onsubmit="submitForm()">
+                <div class="data">
+                    <label>Username</label>
+                    <input type="text" id="usernm" required>
+                    <p class="error"></p>
+                </div>
+                <div class="data">
+                    <label>Password</label>
+                    <input type="password" id="passwd" required>
+                    <p class="error"></p>
+                </div>
+                <div class="forgot-pass"><a href="#">Forgot Password?</a></div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button type="submit" id="loginbtn3">login</button>
+                </div>
+                <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+            </form>
+        </div>
+    </div>
+
+    <button class="home_button" >HOME</button>
+
+    <h2 id="resultM">Movies available in your Selected City</h2>
+
+
+    <div id="reslMovie">
+
+        <div class="bMovie">
+            <div class="mImage">
+                <img src="Images/jindeMeriye.jpg" alt="jinde meriye">
+            </div>
+            <div class="mDescrip">
+                <h2 class="FName">Jinde Meriye</h2>
+                <p class="Ratingn">Ratings</p>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p class="durat">Duration : 2h 21min</p>
+                <h4 class="fDescriptionN">Description</h4>
+                <p class="fDescription">
+                    Yaadi falls in love with Rehmat, an innocent and focused student. Rehmat's father decides to arrange
+                    her marriage with a law-abiding man called Yuvi which places Rehmat at a crossroad in her life.
+                </p>
+                <p class="lnaguag">Available in Punjabi</p>
+                <button class="boktkt">Book Now</button>
+            </div>
+        </div>
+
+        <div class="bMovie">
+            <div class="mImage">
+                <img src="Images/Puada.jpg" alt="puaada">
+            </div>
+            <div class="mDescrip">
+                <h2 class="FName">Puaada</h2>
+                <p class="Ratingn">Ratings</p>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p class="durat">Duration : 2h 10min</p>
+                <h4 class="fDescriptionN">Description</h4>
+                <p class="fDescription">
+                    The film follows the love story of a Punjabi village boy, running a dairy farm and is in a
+                    relationship with Raunak, an air force officer's daughter.
+                </p>
+                <p class="lnaguag">Available in Punjabi</p>
+                <button class="boktkt">Book Now</button>
+            </div>
+        </div>
+
+        <div class="bMovie">
+            <div class="mImage">
+                <img src="Images/AvengersEndgame.jpeg" alt="">
+            </div>
+            <div class="mDescrip">
+                <h2 class="FName">Avengers Endgame</h2>
+                <p class="Ratingn">Ratings</p>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="durat">Duration : 3h 2min</p>
+                <h4 class="fDescriptionN">Description</h4>
+                <p class="fDescription">
+                    After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the
+                    help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and
+                    restore balance to the universe.
+                </p>
+                <p class="lnaguag">Available in Hindi/English</p>
+                <button class="boktkt">Book Now</button>
+            </div>
+        </div>
+
+        <div class="bMovie">
+            <div class="mImage">
+                <img src="Images/KabirS.jpg" alt="">
+            </div>
+            <div class="mDescrip">
+                <h2 class="FName">Kabir Singh</h2>
+                <p class="Ratingn">Ratings</p>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p class="durat">Duration : 2h 52min</p>
+                <h4 class="fDescriptionN">Description</h4>
+                <p class="fDescription">
+                    An exalted but short-fused surgeon plunges into a spiral of drugs, alcohol and rage after his
+                    intense relationship with his girlfriend turbulently ends.
+                </p>
+                <p class="lnaguag">Available in Hindi</p>
+                <button class="boktkt">Book Now</button>
+            </div>
+        </div>
+
+        <div class="bMovie">
+            <div class="mImage">
+                <img src="Images/Pagglait.jpg" alt="">
+            </div>
+            <div class="mDescrip">
+                <h2 class="FName">Pagglait</h2>
+                <p class="Ratingn">Ratings</p>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p class="durat">Duration : 1h 55min</p>
+                <h4 class="fDescriptionN">Description</h4>
+                <p class="fDescription">
+                    The film follows a young widow as she learns how to face the family and was released on 26 March
+                </p>
+                <p class="lnaguag">Available in Hindi</p>
+                <button class="boktkt">Book Now</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <div id="footabt">
+            <h2>About</h2>
+            <p>Movizium is a one stop destination to cater the ticket sales of all the movie shows currently running in your nearest multiplexes and all over the country, it showcases numerous movie options to choose from and movies from different languages and different genres ,along with their average rating to help you choose the one for you. In these modern times you can reside to this hassle-less method of booking movie tickets online in order to save your precious time wasted standing in long que’s.
+                (This website prototype has been designed by: Team-1(Jasmeet Singh, Jayant Kumar, Karan Dhiman, Naman Sharma))</p>
+        </div>
+        <div id="footcont">
+            <h2>Contact Us</h2>
+            <ul>
+                <li>
+                    <i class="far fa-envelope-square"></i>
+                    <span>Gmail<span>
+                </li>
+                <li>
+                    <i class="fab fa-facebook-square"></i>
+                    <span>Facebook<span>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram<span>
+                </li>
+                <li>
+                    <i class="fab fa-twitter-square"></i>
+                    <span>Twitter<span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="Scripts/b.js"></script>
+</body>
+
+</html>
